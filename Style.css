@@ -1,0 +1,222 @@
+/*Normaloizacion................................*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 4em;
+    color: #060A24;
+    font-weight: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h2 {
+    font-size: 3em;
+    color: #060A24;
+    font-weight: normal;
+    margin: 40px 5% 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+p{
+    font-size: 1em;
+    color: #060A24;
+    font-weight: normal;
+    font-family: 'IBM Plex Mono', monospace;
+}
+a{
+    transition: 0.3s;
+    color: transparent;
+    text-decoration: none;
+}
+iframe {  
+    width: 100%;  
+    height: 232px;  
+    border: 0px;                    
+    background-color: transparent;  
+}
+/*Boton General*/
+.btn{
+    border: none;
+    transition: 0.5s;
+    color: #060A24;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-size: 1.125rem;
+    text-decoration: none;
+    background: #00F3BB;
+    font-family: 'IBMPlexMono-Medium'; 
+}
+.btn:hover{
+    color: #FFFFFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+/*Principal Section......................................... */
+.TopInfo{
+    margin: 3% 15% 0px 10%;
+}
+.TopInfo p{
+    max-width: 50em;
+    margin-bottom: 40px;
+}
+h1 span{
+    color: #0000EC;
+}      
+/*seccion Episodios.........................................*/
+main .episodios{
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.episodios div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.episodios div h2{
+    color: #FFFFFF;
+    align-self: flex-start;
+    margin: 2em 0px 1em 0px;
+}
+.episodios div .containerEpisodes{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 0px 3em 0px;
+    justify-content: space-between;
+}
+.episodios div .containerEpisodes iframe{
+    max-width: 48%;
+    margin-bottom:  2em;
+}
+/* About us.........................................*/
+.about{
+    margin: 0px;
+    display: flex;  
+    justify-content: center;
+}
+.about .containerLimit{
+    width: 80%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.about .containerLimit img{
+    width: 80%;
+    z-index: 50;
+    max-width: 410px;
+}
+.about .containerLimit .text h2{
+    margin-left: 0px;
+}
+.about .containerLimit .text p{
+    max-width: 29em;
+}
+/*Seccion Invitadas.........................................*/
+.invitadasContainer{
+    margin-top: 3.5em;
+}
+.invitadas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.invitadas img{
+    max-width: 33.3%;
+}
+/*Temas.........................................*/
+.temas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+main .temas div {
+    display: flex;
+    min-width: 16em;
+    margin-bottom: 4em;
+    flex-direction: column;
+}
+main .temas div img{
+    min-width: 7em;
+}
+main .temas div p{
+    margin-top: 1em;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'IBMPlexSans-SemiBold', sans-serif;
+}
+/*Info Bottom.........................................*/
+main .infoBottom{
+    display: flex;
+    min-height: 24em; 
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+main .infoBottom div{
+    width: 90%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .infoBottom div h2{
+    color: #FFFFFF;
+    text-align: center;
+}
+/* Pie de Pagina......................................... */
+footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+footer .ImagenesRedes{
+    display: flex;
+}
+footer .ImagenesRedes div a{
+    color: #060A24;
+    font-size:  1.375em;
+    margin: 0px 0.625em;
+}
+/* media......................................... */
+@media screen and (max-width: 500px ){
+    main .btn{
+        width: 100%;
+    }
+    main .TopInfo{
+        margin: 4em 5% 20px 5%;
+    }
+    .episodios div{
+        width: 90%;
+    }
+    main .containerEpisodes iframe{
+        min-width: 100%;
+    }  
+    main .about .containerLimit{
+        width: 90%;
+        display: flex;
+        flex-direction: column
+    }
+    main .invitadas, .temas{
+        flex-direction: column;
+    }
+    main .invitadas img{
+        max-width: 100%;
+        height: auto;
+    }
+    main .infoBottom{
+        min-height: 21em;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer p{
+        margin-bottom: 1em;
+    }
+} 
