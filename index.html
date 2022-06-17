@@ -3,148 +3,234 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PodcastChannel</title>
+    <title>Podcast Channel</title>
     <meta name="author" content="Juan Poveda">
     <meta name="description" content="Podcast Channel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- <link rel="stylesheet" href="/sass/style.css"> -->
-    <link rel="stylesheet" href="./css/Style.css">
-    <link rel="stylesheet" href="./css/HeaderStyles.css">
+    <!-- <link rel="stylesheet" href="/css/HeaderStyles.css"> -->
+    <link rel="stylesheet" href="/sass/style.css">
     <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
 
-    <script src="https://kit.fontawesome.com/27dc91b6de.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono%7CIBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27dc91b6de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <nav class="menu">
 
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="Logo Podcast" width="30" height="24" class="d-inline-block align-text-top">
+                    Bootstrap
+                  </a>
+                </div>
+              </nav>
+
             <div class="logo">
-                <img src="./img/logo.svg" alt="Logo Podcast">
+                <a href="">
+
+                </a>
+                <img src="" alt="">
                 <label for="toggle" class="btn-menu"><i class="fas fa-bars"></i></label>
             </div>
 
             <input type="checkbox" id="toggle">
 
+
             <div class="links">
-                <a href="#episodios">EPISODIOS</a>
-                <a href="#nosotros">NOSOTROS</a>
-                <a href="#entrevistas">ENTREVISTAS</a>
-                <a href="#topicos">TÓPICOS</a>
+                <a href="#episodes">EPISODIOS</a>
+                <a href="#us">NOSOTROS</a>
+                <a href="#interview">ENTREVISTAS</a>
+                <a href="#topics">TÓPICOS</a>
             </div>
         </nav>
+        
+        <section class="grid grid-col-1 p-header">
+            <div>
+                <h1 class="text-tertiary text-header text-tertiary text-sans text-sans text-weight-normal">Hello
+                    <del>world</del> pale blue dot<span class="text-point">.</span>
+                </h1>
+                <p class="text-mono text-tertiary text-weight-normal">El portal de podcasts que explora el mundo de la
+                    programación y la tecnología.</p>
+                <p class="text-mono text-tertiary text-weight-normal">Nuevos episodios, todos los jueves cada 15 días.
+                </p>
+            </div>
+
+            <div class="mt-2">
+                <a href="#us" class="btn btn-primary btn-grow text-medium">CONOCÉ MÁS</a>
+            </div>
+        </section>
+
     </header>
 
     <main>
-        <section class="TopInfo">
-            <h1>Hello <del>world</del> pale blue dot<span>.</span></h1>
-            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
-                los jueves cada 15 días.</p>
-            <a class="btn" href="#nosotros">CONOCÉ MÁS</a>
-        </section>
 
-        <div class="episodios" id="episodios">
+        <section class="grid grid-col-1 bg-secondary px-4 clip-double" id="episodes">
+
             <div>
-                <h2>Episodios</h2>
+                <h2 class="text-white text-weight-normal text-sans text-size-title mt-3">Episodios</h2>
+            </div>
 
-                <div class="containerEpisodes">
-                    <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+            <div class="grid grid-col-2 grid-col-xs-1 grid-justify-center grid-gap my-3">
+                <div class="container-center">
+                    <iframe class="iframe grid-place-center"
+                        src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
                         allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                </div>
+                <div class="container-center">
+                    <iframe class="iframe grid-place-center"
+                        src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
                         allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                </div>
+                <div class="container-center">
+                    <iframe class="iframe grid-place-center"
+                        src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
                         allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                </div>
+                <div class="container-center">
+                    <iframe class="iframe grid-place-center"
+                        src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
                         allow="encrypted-media"></iframe>
                 </div>
             </div>
-        </div>
 
-        <div class="about">
+        </section>
 
-            <div class="containerLimit" id="nosotros">
-                <img src="./img/guest/phone.png" alt="phone">
-
-                <section class="text">
-                    <h2>De dónde venimos</h2>
-                    <p>
-                        Our posturings, our imagined self-importance, the delusion that we have some privileged position
-                        in the Universe, are challenged by this point of pale light. <br><br>
-                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-                        vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-                    </p>
-                </section>
+        <div class="grid grid-col-2 grid-col-md-2 grid-col-xs-1 my-3 px-4" id="us">
+            <div>
+                <img src="./img/guest/phone.png" class="img" alt="phone">
             </div>
 
+            <article class="container-center my-2 p-0">
+                <div>
+                    <h2 class="text-tertiary text-size-title text-weight-normal text-sans">De dónde venimos</h2>
+                    <p class="text-justify text-mono text-tertiary text-weight-normal mt-1">Our posturings, our imagined
+                        self-importance, the delusion that we have
+                        some privileged position in the Universe, are challenged by this point of pale light.</p>
+                    <br>
+                    <p class="text-justify text-mono text-tertiary text-weight-normal">Our planet is a lonely speck in
+                        the great enveloping cosmic dark. In our
+                        obscurity, in all this vastness, there is no hint that help will come from elsewhere to save
+                        us from ourselves.</p>
+                </div>
+            </article>
         </div>
 
-
-        <div class="invitadasContainer" id="entrevistas">
-            <h2>Invitadas/os estelares</h2>
-        </div>
-        <div class="invitadas">
-            <img src="./img/guest/grace-hopper.png" alt="Grace Hopper">
-            <img src="../img/guest/Katie-Bouman.png" alt="Katie Bouman">
-            <img src="../img/guest/Margaret_Hamilton.png" alt="Margaret Hamilton">
-            <img src="../img/guest/Univac.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-            <img src="../img/guest/Computer_operators.png"
-                alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
-            <img src="../img/guest/susan-kare.png" alt="susan kare">
-        </div>
-
-
-        <div class="invitadasContainer" id="topicos">
-            <h2>Algunos de nuestros temas</h2>
-        </div>
-        <div class="temas">
+        <section class="container direction-column my-3 px-sx-1 px-4" id="interview">
 
             <div>
-                <img src="./img/icon/icon1.svg" alt="Trabajo remoto">
-                <p>Trabajo remoto</p>
-            </div>
-            <div>
-                <img src="./img/icon/icon2.svg" alt="Repensando la programación">
-                <p>Repensando la programación</p>
-            </div>
-            <div>
-                <img src="./img/icon/icon3.svg" alt="Bases del código">
-                <p>Bases del código</p>
-            </div>
-            <div>
-                <img src="./img/icon/icon4.svg" alt="Seguridad informática">
-                <p>Seguridad informática</p>
+                <h2 class="text-tertiary text-size-title text-weight-normal text-sans">Invitadas/os estelares</h2>
             </div>
 
-        </div>
+            <div class="grid grid-col-3 grid-col-md-2 grid-col-xs-1 grid-gap mt-2">
 
+                <figure>
+                    <img src="./img/guest/grace-hopper.png" class="img" alt="Grace Hopper" />
+                </figure>
 
-        <section class="infoBottom">
-            <div>
-                <h2>¿Querés las últimas novedades?</h2>
-                <a href="#episodios" class="btn">ESCUCHÁ LOS EPISODIOS</a>
+                <figure>
+                    <img src="../img/guest/Katie-Bouman.png" class="img" alt="Katie Bouman" />
+                </figure>
+
+                <figure>
+                    <img src="../img/guest/Margaret_Hamilton.png" class="img" alt="Margaret Hamilton" />
+                </figure>
+
+                <figure>
+                    <img src="../img/guest/Univac.png" class="img" alt="An E.R.A.Univac 1103 computer in the 1950s" />
+                </figure>
+
+                <figure>
+                    <img src="../img/guest/Computer_operators.png" class="img"
+                        alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                </figure>
+
+                <figure>
+                    <img src="../img/guest/susan-kare.png" class="img" alt="susan kare" />
+                </figure>
+
             </div>
 
         </section>
+
+        <section class="container direction-column my-3 px-sx-1 px-4" id="topics">
+            <div>
+                <h2 class="text-tertiary text-size-title text-weight-normal text-sans">Algunos de nuestros temas</h2>
+            </div>
+
+            <div class="grid grid-col-4 grid-col-md-2 grid-col-xs-1 grid-gap mt-2">
+
+                <figure class="figure container-center direction-column m-1">
+                    <img src="./img/icon/icon1.svg" alt="Trabajo remoto" />
+                    <figcaption class="text-center text-mono text-tertiary mt-1">Trabajo remoto</figcaption>
+                </figure>
+
+                <figure class="figure container-center direction-column m-1">
+                    <img src="./img/icon/icon2.svg" alt="Repensando la programación" />
+                    <figcaption class="text-center text-mono text-tertiary mt-1">Repensando la programación
+                    </figcaption>
+                </figure>
+
+                <figure class="figure container-center direction-column m-1">
+                    <img src="./img/icon/icon3.svg" alt="Bases del código" />
+                    <figcaption class="text-center text-mono text-tertiary mt-1">Bases del código</figcaption>
+                </figure>
+
+                <figure class="figure container-center direction-column m-1">
+                    <img src="./img/icon/icon4.svg" alt="Seguridad informática" />
+                    <figcaption class="text-center text-mono text-tertiary mt-1">Seguridad informática</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="grid grid-col-1 bg-secondary p-header clip-t mt-3">
+            <div>
+                <h2 class="text-white text-size-title text-weight-normal text-sans mx-xs-2 text-center">¿Querés las últimas novedades?</h2>
+            </div>
+
+            <div class="container-center mt-3">
+                <a href="#episodes" class="btn btn-primary btn-grow text-medium text-center">ESCUCHÁ LOS EPISODIOS</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
 
-        <p>© 2019— Hello blue pale dot</p>
+        <section class="grid grid-col-2 grid-col-xs-1 grid-gap py-1">
 
-        <div class="ImagenesRedes">
-            <div><a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a></div>
-            <div><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-            <div><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></div>
-            <div><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></div>
-            <div><a href="https://web.telegram.org/#/login" target="_blank"><i class="fab fa-telegram"></i></a></div>
-        </div>
+            <div class="container-center">
+                <h3 class="text-tertiary">© 2019 — Hello blue pale dot</h3>
+            </div>
+
+            <div class="container-center pt-1">
+                <a class="text-tertiary" target="_blank" href="https://www.spotify.com/">
+                    <i class="icon mx-1 fab fa-spotify"></i>
+                </a>
+                <a class="text-tertiary" target="_blank" href="https://www.instagram.com/">
+                    <i class="icon mx-1 fab fa-instagram"></i>
+                </a>
+                <a class="text-tertiary" target="_blank" href="https://twitter.com/">
+                    <i class="icon mx-1 fab fa-twitter"></i>
+                </a>
+                <a class="text-tertiary" target="_blank" href="https://es-la.facebook.com/">
+                    <i class="icon mx-1 fab fa-facebook"></i>
+                </a>
+                <a class="text-tertiary" target="_blank" href="https://web.telegram.org/#/login">
+                    <i class="icon mx-1 fab fa-facebook"></i>
+                    <!-- <i class="icon fab fa-telegram"> -->
+                </a>
+            </div>
 
         </section>
+
     </footer>
 
 </body>
-
 </html>

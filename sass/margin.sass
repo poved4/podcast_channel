@@ -1,22 +1,7 @@
 @import 'var'
 
-.m-0
-    margin: 0
-
 .m-1
     margin: ($spacer * .25)
-
-.m-2
-    margin: ($spacer * .5)
-
-.m-3
-    margin: $spacer
-
-.m-4
-    margin: ($spacer * 1.5)
-
-.m-5
-    margin: ($spacer * 3)
 
 .mt-1
     margin: ($spacer * .25) 0
@@ -27,12 +12,6 @@
 .mt-3
     margin: $spacer 0 0 0
 
-.my
-    margin: ($spacer * .10) 0
-
-.my-1
-    margin: ($spacer * .25) 0
-
 .my-2
     margin: ($spacer * .5) 0
 
@@ -42,5 +21,6 @@
 .mx-1
     margin: 0 ($spacer * .25)
 
-.mx-2
-    margin: 0 ($spacer * .5)
+.mx-xs-2
+    @media (max-width: $screen-xs)
+        padding: 0 ($spacer * .5)

@@ -6,6 +6,9 @@
 .grid-gap
     gap: ($spacer-mini * .5)
 
+.grid-col-1
+    grid-template-columns: repeat(1, 1fr)
+
 .grid-col-2
     grid-template-columns: repeat(2, 1fr)
 
@@ -19,6 +22,16 @@
     @media (max-width: $screen-xs)
         grid-template-columns: repeat(1, 1fr)
 
+.grid-col-md-1
+    @media (min-width: $screen-xs) and (max-width: $screen-md)
+        grid-template-columns: repeat(1, 1fr)
+
 .grid-col-md-2
     @media (min-width: $screen-xs) and (max-width: $screen-md)
         grid-template-columns: repeat(2, 1fr)
+
+.grid-justify-center
+    justify-items: center
+
+.grid-place-center
+    place-self: center
