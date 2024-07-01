@@ -26,10 +26,10 @@
 
   <nav>
     <a href="">
-      <img class="icon anim-grow" src="images/icon/favicon.svg" alt="logo podcast channel" loading="lazy" />
+      <img class="icon anim-grow" src="images/icon/favicon.svg" alt="logo podcast channel" loading="lazy">
     </a>
 
-    <input type="checkbox" id="menu-toggle" />
+    <input type="checkbox" id="menu-toggle">
     <label class='menu-button-container' for="menu-toggle">
       <span class='menu-button'></span>
     </label>
@@ -42,22 +42,26 @@
     </menu>
   </nav>
 
-  <header class="container py-5 mb-5">
-    <div class="row-cols-1">
+  <header class="container">
+    <div class="row-cols-1 py-5 my-5">
 
-      <h1 class="col main-title">
-        Hello <del>world</del>
-        pale blue dot<span class="color-blue-light">.</span>
-      </h1>
+      <div class="col">
+        <h1 class="main-title">
+          Hello <del>world</del>
+          pale blue dot<span class="color-blue-light">.</span>
+        </h1>
+      </div>
 
-      <p class="col font-secondary">
-        El portal de podcasts que explora el mundo de la programación y la tecnología.
-        <br> Nuevos episodios, todos los jueves cada 15 días.
-      </p>
+      <div class="col mb-4">
+        <p class="font-secondary m-0">
+          El portal de podcasts que explora el mundo de la programación y la tecnología.
+          <br> Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+      </div>
 
       <div class="col">
         <a href="#us"
-          class="border-0 fw-bold text-uppercase text-decoration-none py-3 px-5 btn-custom font-tertiary mt-4">
+          class="border-0 fw-bold text-uppercase text-decoration-none py-3 px-5 btn-custom font-tertiary d-flex justify-content-center d-md-inline">
           CONOCÉ MÁS</a>
       </div>
 
@@ -68,22 +72,22 @@
 
     <h3 class="text-light text-start fs-1 w-75 m-0">Episodios</h3>
 
-    <div class="container mt-4">
-      <div class="row row-cols-1 row-cols-md-2">
+    <div class="container my-4">
+      <div class="row row-cols-1 row-cols-md-2 g-1">
         <div class="col">
-          <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+          <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
             allow="encrypted-media"></iframe>
         </div>
         <div class="col">
-          <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+          <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
             allow="encrypted-media"></iframe>
         </div>
         <div class="col">
-          <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+          <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
             allow="encrypted-media"></iframe>
         </div>
         <div class="col">
-          <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+          <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
             allow="encrypted-media"></iframe>
         </div>
       </div>
@@ -91,14 +95,12 @@
 
   </main>
 
-  <section id="us" class="container my-3">
-    <div class="row row-cols-1 row-cols-sm-2">
+  <div id="us" class="container my-3">
+    <div class="row row-cols-1 row-cols-md-2">
 
-      <div class="col">
-        <figure class="m-0">
-          <img src="images/content/phone.png" class="img" alt="phone">
-        </figure>
-      </div>
+      <figure class="col p-0 m-0">
+        <img src="images/content/phone.png" alt="phone">
+      </figure>
 
       <article class="col my-auto">
         <h3 class="text-start fs-1 m-0">De dónde venimos</h3>
@@ -113,40 +115,51 @@
       </article>
 
     </div>
-  </section>
+  </div>
 
   <section id="interview" class="d-flex flex-column justify-content-center align-items-center my-3">
 
     <h3 class="text-start fs-1 w-75 m-0">Invitadas/os estelares</h3>
 
-    <div class="container mt-4">
+    <div class="container my-4">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-1">
 
         <div class="col">
-          <img src="images/content/grace_hopper.png" alt="grace hopper" class="img" loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/grace_hopper.png" alt="grace hopper" loading="lazy">
+          </figure>
         </div>
 
         <div class="col">
-          <img src="images/content/katie_bouman.png" alt="katie bouman" class="img" loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/katie_bouman.png" alt="katie bouman" loading="lazy">
+          </figure>
         </div>
 
         <div class="col">
-          <img src="images/content/margaret_hamilton.png" alt="margaret hamilton" class="img" loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/margaret_hamilton.png" alt="margaret hamilton" loading="lazy">
+          </figure>
         </div>
 
         <div class="col">
-          <img src="images/content/univac.png" alt="an E.R.A.Univac 1103 computer in the 1950s" class="img"
-            loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/univac.png" alt="an E.R.A.Univac 1103 computer in the 1950s" loading="lazy">
+          </figure>
         </div>
 
         <div class="col">
-          <img src="images/content/computer_operators.png"
-            alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer" class="img"
-            loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/computer_operators.png"
+              alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer"
+              loading="lazy">
+          </figure>
         </div>
 
         <div class="col">
-          <img src="images/content/susan_kare.png" alt="susan kare" class="img" loading="lazy" />
+          <figure class="m-0 p-0">
+            <img src="images/content/susan_kare.png" alt="susan kare" loading="lazy">
+          </figure>
         </div>
 
       </div>
@@ -159,28 +172,36 @@
     <h3 class="text-start fs-1 w-75 m-0">Algunos de nuestros temas</h3>
 
     <div class="container text-center font-secondary mt-4">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
 
-        <figure class="col">
-          <img src="images/content/remote_work.svg" alt="remote work" class="mb-2" loading="lazy" />
-          <figcaption>Trabajo remoto</figcaption>
-        </figure>
+        <div class="col">
+          <figure class="p-0 m-0">
+            <img src="images/content/remote_work.svg" alt="remote work" class="w-75" loading="lazy">
+            <figcaption class="mt-3">Trabajo remoto</figcaption>
+          </figure>
+        </div>
 
-        <figure class="col">
-          <img src="images/content/rethinking_programming.svg" alt="rethinking programming" class="mb-2"
-            loading="lazy" />
-          <figcaption>Repensando la programación</figcaption>
-        </figure>
+        <div class="col">
+          <figure class="p-0 m-0">
+            <img src="images/content/rethinking_programming.svg" alt="rethinking programming" class="w-75"
+              loading="lazy">
+            <figcaption class="mt-3">Repensando la programación</figcaption>
+          </figure>
+        </div>
 
-        <figure class="col">
-          <img src="images/content/code_bases.svg" alt="code bases" class="mb-2" loading="lazy" />
-          <figcaption>Bases del código</figcaption>
-        </figure>
+        <div class="col">
+          <figure class="p-0 m-0">
+            <img src="images/content/code_bases.svg" alt="code bases" class="w-75" loading="lazy">
+            <figcaption class="mt-3">Bases del código</figcaption>
+          </figure>
+        </div>
 
-        <figure class="col">
-          <img src="images/content/computer_security.svg" alt="Scomputer security" class="mb-2" loading="lazy" />
-          <figcaption>Seguridad informática</figcaption>
-        </figure>
+        <div class="col">
+          <figure class="p-0 m-0">
+            <img src="images/content/computer_security.svg" alt="Scomputer security" class="w-75" loading="lazy">
+            <figcaption class="mt-3">Seguridad informática</figcaption>
+          </figure>
+        </div>
 
       </div>
     </div>
@@ -188,9 +209,9 @@
   </section>
 
   <section class="d-flex flex-column justify-content-center align-items-center bg-blue-light cutout-top-left my-3">
-    <h3 class="text-center text-light fw-semibold fs-1 w-75 m-0">¿Querés las últimas novedades?</h3>
+    <h3 class="text-center text-light fw-semibold fs-1 w-75 m-0 mb-3">¿Querés las últimas novedades?</h3>
     <a href="#episodes"
-      class="border-0 fw-bold text-uppercase text-decoration-none py-3 px-5 btn-custom font-tertiary mt-4">
+      class="border-0 fw-bold text-uppercase text-decoration-none py-3 px-5 btn-custom font-tertiary mt-5">
       ESCUCHÁ LOS EPISODIOS</a>
   </section>
 
