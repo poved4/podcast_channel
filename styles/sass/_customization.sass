@@ -1,0 +1,53 @@
+.text-justify
+  text-align: justify
+
+.main-title
+  font-size: 4rem
+
+.font-primary
+  font-family: $font-primary
+
+.font-secondary
+  font-family: $font-stack
+
+.font-tertiary
+  font-family: $font-medium
+
+.color-blue
+  color: $color-blue
+
+.color-blue-light
+  color: $color-blue-light
+
+.bg-blue
+  background-color: $color-blue
+
+.bg-blue-light
+  background-color: $color-blue-light
+
+section
+  min-height: 350px
+
+.btn-custom
+  color: $color-blue
+  transition: $timeAnim
+  background-color: $color-green
+
+  &:hover
+    color: #ffffff
+    background-image: linear-gradient(225deg, $color-blue-light 0%, $color-green 100%)
+
+.icon
+  height: 2.3em
+
+.cutout-top-left
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%)
+
+.cutout-parallelogram
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%)
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%)
+
+.anim-grow
+  &:hover
+    transition: 0.3s
+    transform: scale(1.2)

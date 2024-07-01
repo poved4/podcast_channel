@@ -1,0 +1,114 @@
+nav
+  height: 50px
+  padding: 1.2em
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
+
+menu
+  margin: 0
+  padding: 0
+  display: flex
+  flex-direction: row
+  list-style-type: none
+  font-family: $font-stack
+
+  &>li
+    overflow: hidden
+    margin: 0rem 1rem
+
+    &>a
+      color: $color-blue
+      text-decoration: none
+
+      &:hover
+        color: $color-green
+        text-decoration-line: line-through
+
+      &:active
+        opacity: 40%
+
+.menu-button-container
+  width: 30px
+  display: none
+  height: 100vh
+  cursor: pointer
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+#menu-toggle
+  display: none
+
+.menu-button, .menu-button::before, .menu-button::after
+  height: 4px
+  width: 30px
+  display: block
+  border-radius: 2px
+  position: absolute
+  background-color: $color-blue
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.menu-button
+
+  &::after
+    content: ''
+    margin-top: 8px
+
+  &::before
+    content: ''
+    margin-top: -8px
+
+#menu-toggle
+
+  &:checked+.menu-button-container .menu-button
+    background: rgba(255, 255, 255, 0)
+
+  &:checked+.menu-button-container .menu-button::after
+    margin-top: 0px
+    transform: rotate(-45deg)
+
+  &:checked+.menu-button-container .menu-button::before
+    margin-top: 0px
+    transform: rotate(45deg)
+
+@media (max-width: 756px)
+  menu
+    top: 0
+    left: 0
+    width: 100vw
+    margin-top: 50px
+    position: absolute
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+    &>li
+      margin: 0
+      width: 100vw
+      display: flex
+      padding: 0.5em 0rem
+      justify-content: center
+      background-color: $color-blue-light
+
+      &>a
+        color: #ffffff
+
+  .menu-button-container
+    display: flex
+
+  #menu-toggle
+
+    &~menu li
+      height: 0
+      margin: 0
+      padding: 0
+      border: 0
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1)
+
+    &:checked~menu li
+      height: 2.5em
+      padding: 0.5em
+      border: 1px solid rgba(255, 255, 255, .5)
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1)
