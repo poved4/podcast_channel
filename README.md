@@ -1,5 +1,14 @@
-# acamica's first project: podcast channel
+_<p style="text-align:right;">2020-01-09</p>_
 
-date: 2020-01-09
+# Podcast Channel
 
-description: It is the first project realized for the full stack web development bootcam of acamica + globant.
+It is the first project completed for the Full Stack Web Development bootcamp by **Acamica + Globant**.
+
+
+## Technologies
+
+- Bootstrap
+- HTML5
+- CSS3
+- Sass
+- Git
